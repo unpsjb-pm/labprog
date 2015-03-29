@@ -1,7 +1,7 @@
 # S.O.L.I.D. GRAPH
 Un implementación S.O.L.I.D. de la estructura de datos Grafo.
 
-## <<GraphImplementation>>
+## << GraphImplementation >>
 La interface *GraphImplementation* presenta el comportamiento mínimo de un grafo. Este conjunto de métodos es dependiente de la implementación, siendo los únicos que deben ser codificados para crear una nueva implementación completa de grafo.
 ```
 boolean addNode(Node n);
@@ -33,7 +33,7 @@ int order();
 implements Iterable<Node>, GraphImplementation<Node>
 ```
 
-## <<TraverseAlgorithm>>
+## << TraverseAlgorithm >>
 La interface *TraverseAlgorithm* provee los métodos que necesita la clase grafo para hacer el recorrido de los nodos y que deben ser implementadas por las diferentes estrategias de recorrido.
 ```
 void setGraph(Graph<Node> g);	
