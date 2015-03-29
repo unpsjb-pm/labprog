@@ -13,15 +13,15 @@ public class Graph<Node> implements Iterable<Node>, GraphImplementation<Node> {
 	}
 	
 	/* High-level methods. Implementation independent. */
-	int inDeegre(Node n){
+	public int inDeegre(Node n){
 		return g.predecessors(n).size();
 	}
 	
-	int outDeegre(Node n){
+	public int outDeegre(Node n){
 		return g.successors(n).size();
 	}
 
-	int deegre(Node n){
+	public int deegre(Node n){
 		return inDeegre(n) + outDeegre(n);
 	}
 	

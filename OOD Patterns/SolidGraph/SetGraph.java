@@ -7,11 +7,10 @@ import java.util.Set;
 public class SetGraph<Node> implements GraphImplementation<Node> {
 
 	private final int ORIGIN = 0;
-	private final int DESTINY = 0;
-	
-	
-	Set<Node> nodes;
-	Set<ArrayList<Node>> arcs;
+	private final int DESTINY = 1;
+		
+	private Set<Node> nodes;
+	private Set<ArrayList<Node>> arcs;
 	
 	public SetGraph(){
 		nodes = new HashSet<Node>();
